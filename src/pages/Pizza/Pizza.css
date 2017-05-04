@@ -1,0 +1,15 @@
+.alignCenter { text-align: center; }
+.alignLeft { text-align: left; }
+.marginFive { margin: 5px; }
+.marginTen { margin: 10px; }
+
+.threeColumns {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+}
+
+.PizzaTable {
+    margin: 0px auto;
+}
+
