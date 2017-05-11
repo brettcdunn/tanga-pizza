@@ -15,6 +15,7 @@ class App extends Component {
                     <Link to="/">Home</Link> | <Link to="/pizzas">Pizzas</Link> | <Link to="/toppings">Toppings</Link>
                     {this.props.children}
                 </p>
+                <p>Home of the tangiest pizzas around.</p>
             </div>
         );
     }

@@ -7,12 +7,26 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #bcbaba;
   height: 100px;
   padding: 20px;
-  color: white;
+  color: #dd6666;
 }
 
 .App-intro {
   font-size: large;
+}
+
+a {
+    color: #dd6666;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #dd6666;
+}
+
+a:hover {
+    color: #3ccbfc;
+    text-decoration: underline;
 }

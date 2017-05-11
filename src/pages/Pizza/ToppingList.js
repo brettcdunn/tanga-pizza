@@ -86,9 +86,11 @@ class ToppingList extends Component {
                 <fieldset className='marginTen alignCenter'>
                     <legend>Toppings:</legend>
                     <div className='threeColumns'>
+                        <ul>
                         {this.state.toppings.map(
-                            topping=><li className='marginFive alignLeft'>{topping.id} - {topping.name}</li>
+                            topping=><li>{topping.id} - {topping.name}</li>
                         )}
+                        </ul>
                     </div>
                 </fieldset>
             </form>

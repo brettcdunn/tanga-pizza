@@ -4,12 +4,54 @@
 .marginTen { margin: 10px; }
 
 .threeColumns {
-    -webkit-column-count: 4; /* Chrome, Safari, Opera */
-    -moz-column-count: 4; /* Firefox */
-    column-count: 4;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
 }
 
-.PizzaTable {
-    margin: 0px auto;
+table.PizzaTable {
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    margin: 10px auto;
+    padding: 0;
+    border-spacing: 0;
+    width: auto;
 }
 
+table.PizzaTable > tbody > tr:nth-child(even),
+table.PizzaTable > tr:nth-child(even)
+{
+    background-color: #b5eafc;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+}
+
+ul > li {
+    border: 1px solid #a0a0a0;
+    padding: 4px;
+    text-align: left;
+}
+
+ul > li:nth-child(even)
+{
+    background-color: #b5eafc;
+}
+
+table.PizzaTable th
+{
+    border: 1px solid #a0a0a0;
+    color: #000;
+    background-color: #bcbaba;
+    padding: 4px;
+    text-align: left;
+}
+
+table.PizzaTable td
+{
+    border: 1px solid #a0a0a0;
+    padding: 4px;
+    text-align: left;
+}

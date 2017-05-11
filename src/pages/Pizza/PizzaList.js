@@ -21,7 +21,9 @@ class PizzaList extends Component {
     fetchPizzas(){
         fetch('https://pizzaserver.herokuapp.com/pizzas')
             .then(result=>result.json())
-            .then(pizzas=>this.setState({pizzas}))
+            .then(
+                pizzas=>this.setState({pizzas})
+            )
             .catch(e => console.log(e))
     }
 
@@ -102,10 +104,9 @@ class PizzaList extends Component {
                 <fieldset className='marginTen alignCenter'>
                     <legend>Pizzas:</legend>
                     <table className='PizzaTable'>
-                        <caption>Pizzas</caption>
                         <thead>
                             <tr>
-                                <th>ID</th>
+                                <th>Pizza #</th>
                                 <th>Name</th>
                                 <th>Description</th>
                             </tr>

@@ -125,16 +125,18 @@ class PizzaView extends Component {
                 <fieldset className='marginTen alignCenter'>
                     <legend>Toppings:</legend>
                     <input type="submit" value="Update" />
-                    <div className='threeColumns'>
+                    <div className='threeColumns marginTen'>
+                        <ul>
                         {this.state.toppings.map(
                             topping=>
-                            <div className='marginFive alignLeft'>
+                            <li>
                                 <label>
                                     <input type="checkbox" name="toppings[]" checked={topping.checked} value={topping.id} onChange={this.handleInputChange} />
                                     <span className='marginFive'>{topping.name}</span>
                                 </label>
-                            </div>
+                            </li>
                         )}
+                        </ul>
                     </div>
                     <input type="submit" value="Update" />
                 </fieldset>
