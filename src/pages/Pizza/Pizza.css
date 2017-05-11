@@ -27,6 +27,7 @@ table.PizzaTable > tr:nth-child(even)
 ul {
     list-style-type: none;
     margin:0;
+    display:contents;
 }
 
 ul > li {
